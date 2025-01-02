@@ -1,0 +1,31 @@
+<div class="field-block">
+  <h2>User Profile Page</h2>
+</div>
+<div class="field-block">
+  <mat-slide-toggle #boolValueControl>Toggle me!</mat-slide-toggle>
+</div>
+
+<div class="field-block">
+  <mat-form-field>
+    <mat-label>Choose a date</mat-label>
+    <input #dateValueControl matInput [matDatepicker]="picker">
+    <mat-hint>MM/DD/YYYY</mat-hint>
+    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+    <mat-datepicker #picker></mat-datepicker>
+  </mat-form-field>
+</div>
+
+<div class="field-block">
+  <button mat-fab extended (click)="click()">
+    <mat-icon>check</mat-icon>
+    Update
+  </button>
+</div>
+
+<div class="field-block">
+  <span>Bool Value: {{boolValue$ | async}}</span>
+</div>
+
+<div class="field-block">
+  <span>Date Value: {{dateValue$ | async}}</span>
+</div>

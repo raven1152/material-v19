@@ -1,0 +1,68 @@
+<h1>Material Demo</h1>
+<h2>With NgRx</h2>
+
+<div>
+  <button (click)="increment()">Increment</button>
+</div>
+
+<div>
+  <div>Current Count: {{ count$ | async }}</div>
+</div>
+
+<div>
+  <button (click)="decrement()">Decrement</button>
+</div>
+
+<div>
+  <button (click)="reset()">Reset Counter</button>
+</div>
+
+<br />
+<br />
+
+<p>
+  This app uses Angular Material, and has an example of a basic mobile-first
+  responsive container class called "container" that is in contained in the
+  styles.scss file, and used to wrap the router outlet that is in the
+  app-component component.
+</p>
+<p>
+  There are 3 "Feature States" in this app; "app", "count", and "books".
+  The "app" and "count" feature states follow their respective examples in
+  links 3 and 4 below, from the RxJs web site.  The third one, I did
+  on my own.  The pages for these are...
+</p>
+<ul>
+  <li>Home (this page) - Basic NgRx Project</li>
+  <li>User Profile (hamburger menu) - My Example</li>
+  <li>Books (hamburger menu) - Intermediate NgRx Project</li>
+</ul>
+<p>
+  Links 1 and 2 are for Youtube videos that explain what NgRx is and it's
+  features.  Link 1 is a short and high level description of NgRx.  Link 2
+  is a deeper dive into how to write actions, reducers, and selectors.  It
+  gives a lot of information for the length of the video.
+</p>
+<ol>
+  <li>
+    <a href="https://www.youtube.com/watch?v=L60Pc69ktxg">What is NgRx</a>
+  </li>
+  <li>
+    <a href="https://www.youtube.com/watch?v=kx0VTgTtSBg">Explanation of Major Features of RxJs</a>
+  </li>
+  <li>
+    <a href="https://ngrx.io/guide/store">Basic NgRx Project</a>
+  </li>
+  <li>
+    <a href="https://ngrx.io/guide/store/walkthrough">Intermediate NgRx Project</a>
+  </li>
+  <li>
+    <a href="https://angular.love/understanding-the-magic-behind-storemodule-of-ngrx-ngrx-store">Long Article w/ In Depth Discussion of NgRx</a>
+  </li>
+  <li>
+    <a href="https://github.com/ngrx/platform">Source Code for NgRx</a>
+  </li>
+</ol>
+
+<br />
+<br />
