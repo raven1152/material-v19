@@ -20,6 +20,8 @@ div.container {
 
 div.container:after {
   content: "width is under 640px";
+  display: block;
+  margin-top: 40px;
 }
 
 /* Small devices such as large phones (640px and up) */
